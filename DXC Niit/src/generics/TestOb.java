@@ -1,7 +1,7 @@
 package generics;
 
-public class TestObj {
-
+public class TestOb {
+	
 	public static void main(String[] args) {
 		Gen<String> g1 = new Gen<String>("abdul");
 		g1.show();
@@ -11,6 +11,9 @@ public class TestObj {
 		g2.show();
 		System.out.println(g2.getOb());
 		
+		//Test<Integer> myTest = new Test<Integer>(10,20);
+		Test<MyNumber> myTest = new Test<MyNumber>(new MyNumber(), new MyNumber());
 		
 	}
+
 }
