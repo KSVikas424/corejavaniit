@@ -10,7 +10,7 @@ public class NoOfDaysBTW {
 
 		LocalDate dob = LocalDate.of(2000, 02, 18);
 		Period period = Period.between(dob, LocalDate.now());
-		System.out.println(period.getYears()+ "" +period.getMonths() + period.getDays());
+		System.out.println(period.getYears()+ " " +period.getMonths() + " " +period.getDays());
 	}
 
 }
