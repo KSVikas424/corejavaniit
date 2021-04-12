@@ -29,6 +29,9 @@ public class PlayEmployees {
 		List<Employee> sortedList = empList.stream().sorted(c).collect(Collectors.toList());
 		System.out.println(sortedList);
 		
+		sortedList = empList.stream().sorted().collect(Collectors.toList());
+		System.out.println(sortedList);
+		
 		
 		Comparator<Employee> c1 = (e1,e2) -> {
 			return (e1.sal >e2.sal)? -1:
@@ -37,6 +40,10 @@ public class PlayEmployees {
 		
 		List<Employee> sortedList1 = empList.stream().sorted(c1).collect(Collectors.toList());
 		System.out.println(sortedList1);
+		
+		Employee maxSalary = empList.stream().min((e1,e2) -> e2.compareTo(e1)).get();
+		System.out.println(maxSalary.toString());
+		
 	}
 
 }

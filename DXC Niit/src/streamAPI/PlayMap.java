@@ -29,5 +29,8 @@ public static void main(String[] args) {
 	/*List<Integer> list5 = list2.stream().count().collect(Collectors.toList());
 	ArrayList<Integer> list6 = (ArrayList<Integer>) list5;
 	System.out.println(list6);*/
+	
+	Long noStudentsMarksLessFifteen  = list2.stream().filter(i -> i<15).count();
+	System.out.println(noStudentsMarksLessFifteen+" of them have scored less than fifteen");
 }
 }

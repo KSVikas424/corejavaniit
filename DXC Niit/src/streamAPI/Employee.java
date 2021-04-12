@@ -1,6 +1,6 @@
 package streamAPI;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
 
 	String name;
 	int sal;
@@ -12,6 +12,11 @@ public class Employee {
 
 	public String toString() {
 		return this.name + "\t" + this.sal;
+	}
+
+	public int compareTo(Employee e1) {
+		// TODO Auto-generated method stub
+		 return (this.sal > e1.sal) ? 1 :(this.sal < e1.sal) ? -1 : 0;
 	}
 	
 }
