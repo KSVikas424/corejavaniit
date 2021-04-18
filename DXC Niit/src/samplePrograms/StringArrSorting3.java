@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	    for(String s : strArr)
 	    	ts.add(s);
 	    System.out.println(ts);
-	    String[] sortStrArr = (String[])ts.toList();
+	    String[] sortStrArr = (String[])ts.toArray();
 	    String[] sortStr = sort(sortStrArr);
 	    for(String arr: sortStr) {
 	    	 System.out.println(arr);
