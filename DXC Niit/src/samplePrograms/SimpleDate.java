@@ -74,11 +74,11 @@ class Customer{
 	private String name;
 	private Address address;
 	private SimpleDate registrationDate;
-	public Customer(int custId, String name, Address address, SimpleDate registrationDate) {
+	public Customer(int custId, String name, Address address2, SimpleDate registrationDate) {
 		super();
 		this.custId = custId;
 		this.name = name;
-		this.address = address;
+		this.address = address2;
 		this.registrationDate = registrationDate;
 	}
 	public String toString() {
